@@ -11,5 +11,7 @@ console.log(random.length);
 let withtire=names.join("-");
 console.log(withtire);
 
+let ali=names.join(" ");
+
 let sıralı=names.sort();
 let sıra=names.indexOf("gufran");
