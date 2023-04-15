@@ -6,6 +6,8 @@ let stundent = {
     salary: 5000,
     exam: ['turkısh', 'math', 'english'],
 
+
+
     login:function () {
         console.log("login");
     },
@@ -25,6 +27,8 @@ let stundent = {
 
 
 }
+
+let stundent2 = {"name":"ahmet","age":23,"city":"istanbul","salary":5000,"exam":["turkısh","math","english"],"login":function () {},"logout":function () {},"print":function () {}};
 stundent.print();
 console.log(this);
 stundent.login();
