@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <p>This is a paragraph</p>
+
+    <!-- <button>Return the offset coodinates of the p element</button> -->
+
+    <button>Set the offset coordinates of the p element equal to the span element</button>
+
+    <span style="position: absolute; left: 100px; top: 150px;">This is a span</span>
+
+    <script>
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         var x=$("p").offset();
+        //         alert("Top: "+x.top+" Left: "+x.left);
+        //     });
+        // });
+
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         // var x=$("p").offset({ top:200,left:200});
+        //         var x=$("p").offset({ top:400,left:400});
+        //     });
+        // });
+
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+
+        //         newPos = new Object();
+        //         // newPos.left="150";
+        //         newPos.left="0";
+        //         newPos.top="100";
+        //         $("p").offset(newPos);
+
+                // $("p").offset(function(n,c){
+                //     newPos = new Object();
+                //     // newPos.left=c.left+100;
+                //     // newPos.top= c.top +100;
+                //     newPos.left=c.left+300;
+                //     newPos.top= c.top +300;
+                //     return newPos;
+                // });
+           // });
+       // });
+
+
+       $(document).ready(function(){
+           $("button").click(function(){
+               $("p").offset($("span").offset());
+           });
+       });
+    </script>
+
+
+
+</body>
+</html>

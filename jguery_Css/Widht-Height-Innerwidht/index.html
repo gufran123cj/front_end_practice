@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        #can{
+           /* margin: auto;*/
+            height: 100px;
+            width: 300px;
+            padding: 10px;
+            margin: 3px;
+
+
+            border: 1px solid blue;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- <div style="height: 100px;width: 300px;padding: 10px;margin:3x;border: 1px solid blue;background-color: lightblue;"></div> -->
+    <div id="can"></div>
+    <br>
+    <button>Display the width of div</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                // alert("Width of div: "+$("div").width());
+                // alert("Width of div: "+$("#can").width());
+                // alert("Width of div: "+$("#can").height());
+                // alert("Width of div: "+$("#can").innerWidth());
+                // alert("Width of div: "+$("#can").innerHeight());
+                // alert("Width of div: "+$("#can").outerWidth());
+                // alert("Width of div: "+$("#can").outerWidth());
+                // alert("Width of div: "+$("#can").outerWidth(true));
+                // alert("Width of div: "+$("#can").outerHeight());
+                alert("Width of div: "+$("#can").outerHeight(true));
+            });
+        });
+    </script>
+
+
+
+
+
+</body>
+</html>
