@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Json</title>
+</head>
+<body>
+    <h1>Learning Json</h1>
+    <div id="gufran"></div>
+
+    <script type="text/javascript">
+        var myObj= {
+            "friend": [
+                {
+                    "firstname": "Celal",
+                    "lastname":"Özdemir"
+                },
+                {
+                    "firstname": "Deniz",
+                    "lastname": "Göçer"
+                },
+                {
+                    "firstname": "Gufran",
+                    "lastname": "Güneş"
+                },
+                {
+                    "firstname": "Selim Eren ",
+                    "lastname": "Karar"
+                }
+
+
+            ]
+
+
+
+        }
+        var person = {         
+                "firstname": "Gufran",
+                "lastname": "Güneş",
+            "age": "23",
+
+            "adress": {
+                "Street": "Gümüşçeşe Mah.",
+                "City":"Balıkesir"
+
+
+            },
+            "Hobbies": [
+                "swimming pool",
+                "run the forest"],
+            "Cars": [
+                {
+                    "mark": "Toyoto",
+                    "Year": 2012
+                }
+                
+            ]
+        }
+        var users = myObj.friend;
+        var html = '';
+        for (var x in users) {
+           html+=(Number(x)+1) + '.'+users[x].firstname + ' ' + users[x].lastname+'<br>'
+        }
+        document.getElementById('gufran').innerHTML = html;
+        Console.log(html);
+    </script>
+
+</body>
+</html>
+
