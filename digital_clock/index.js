@@ -1,4 +1,5 @@
-const clock = document.querySelector('.clock');
+const clock = document.querySelector('#bengayim');
+clock.innerHTML = "mama im a criminal mama im a criminaaal";
 
 const tick = () => {    
     const now = new Date();
